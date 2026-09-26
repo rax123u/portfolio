@@ -118,7 +118,7 @@ export function Navigation() {
       </header>
 
       <nav id="site-menu" className={`menu${open ? " is-open" : ""}`} aria-label="Site" aria-hidden={!open}>
-        <div className="menu-inner">
+        <div className="menu-inner" data-lenis-prevent>
           <ol className="menu-list">
             {items.map((item, index) => (
               <li key={item.id}>

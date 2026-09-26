@@ -427,16 +427,23 @@ a:focus-visible .roll > span:last-child {
 
 .menu-inner {
   display: flex;
-  height: 100%;
+  height: calc(100% - 6em);
+  margin-top: 6em;
+  min-height: 0;
   flex-direction: column;
-  justify-content: flex-end;
   gap: 3em;
-  padding: 6em var(--pad) 2em;
+  padding: 0 var(--pad) 2em;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(241 238 231 / 35%) transparent;
 }
 
 .menu-list {
   display: grid;
   gap: 0.1em;
+  margin-top: auto;
 }
 
 .menu-link {
@@ -1101,7 +1108,7 @@ a:focus-visible .roll > span:last-child {
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 200s linear infinite;
+  animation: marquee 350s linear infinite;
 }
 
 .marquee-track.is-reverse {
@@ -1505,6 +1512,8 @@ a:focus-visible .roll > span:last-child {
   text-transform: uppercase;
 }
 
+.link-line { color: inherit; }
+
 /* ------------------------------------------------------------------ cursor */
 
 .cursor-root {
@@ -1556,8 +1565,6 @@ html.has-cursor a,
 html.has-cursor button {
   cursor: none;
 }
-
-.link-line { color: inherit; }
 
 /* --------------------------------------------------------------- responsive */
 

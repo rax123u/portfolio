@@ -92,18 +92,25 @@ export const skillGroups: SkillGroup[] = [
 
 /** Kinetic typography — technologies called out as a moving line. */
 export const kineticStack = [
-  "React",
-  "Node",
-  "Laravel",
-  "TypeScript",
-  "MySQL",
-  "Prisma",
-  "Tailwind",
-  "Redux",
-  "GSAP",
-  "Lenis",
-  "Git",
-  "Linux",
+  
+    "Frontend Architecture",
+    "React.js",
+    "TypeScript",
+    "Backend Development",
+    "Node.js",
+    "Laravel",
+    "REST APIs",
+    "Database Design",
+    "MySQL",
+    "Prisma ORM",
+    "State Management",
+    "Redux Toolkit",
+    "UI Engineering",
+    "Tailwind CSS",
+    "GSAP & Lenis",
+    "Git & GitHub",
+    "Linux"
+  
 
 ] as const;
 
